@@ -1,97 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MDJ Guatemala | Neil Vélez</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='./img/logo.ico' />
+    <meta name="description" content="Neil Vélez en Guatemala - Predicador católico y fundador de Misioneros de Jesús. Testimonios, eventos, libros y videos que inspiran fe y esperanza." />
+    <meta name="keywords" content="Neil Vélez, Misioneros de Jesús, predicador católico, sanación, fe, Guatemala" />
+    <meta name="author" content="MDJ Guatemala" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <!-- HERO -->
-    <section class="hero parallax">
-        <div class="hero-content fade-in">
-            <h1>Neil Vélez en Guatemala</h1>
-            <p>Inspirando fe y esperanza alrededor del mundo</p>
-            <a href="#quien" class="btn-primary">Conócelo</a>
-        </div>
-    </section>
+    <header>
+        <!-- Navegación -->
+        
 
-    <!-- QUIÉN ES -->
-    <section id="quien" class="section fade-in">
-        <div class="container">
-            <div class="text">
-                <h2>¿Quién es Neil Vélez?</h2>
-                <p>Neil Vélez es un reconocido predicador católico, fundador del ministerio Misioneros de Jesús, con más de 30 años de experiencia llevando el mensaje de sanación y esperanza a miles de personas en diferentes países. Su ministerio se ha caracterizado por inspirar, transformar vidas y acercar corazones a Dios.</p>
+        <!-- HERO -->
+        <section class="hero parallax" role="banner" aria-label="Neil Vélez en Guatemala">
+            <div class="hero-content fade-in">
+                <h1>Neil Vélez en Guatemala</h1>
+                <p>Inspirando fe y esperanza alrededor del mundo</p>
+                <a href="#quien" class="btn-primary">Conócelo</a>
             </div>
-            <div class="image zoom-on-scroll">
-                <img src="img/neil-portrait.jpg" alt="Neil Vélez">
-            </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
-    <!-- MISIÓN -->
-    <section class="section dark">
-        <div class="container stats">
-            <div class="stat">
-                <h3>+30</h3>
-                <p>Años de ministerio</p>
+    <main>
+        <!-- QUIÉN ES -->
+        <section id="quien" class="section fade-in" tabindex="-1">
+            <div class="container">
+                <div class="text">
+                    <h2>¿Quién es Neil Vélez?</h2>
+                    <p>
+                        Neil Vélez es un reconocido predicador católico, fundador del ministerio Misioneros de Jesús,
+                        con más de 30 años de experiencia llevando el mensaje de sanación y esperanza a miles de personas
+                        en diferentes países. Su ministerio se ha caracterizado por inspirar, transformar vidas y acercar
+                        corazones a Dios.
+                    </p>
+                </div>
+                <div class="image zoom-on-scroll">
+                    <img src="img/neil-portrait.jpg" alt="Retrato de Neil Vélez" loading="lazy" />
+                </div>
             </div>
-            <div class="stat">
-                <h3>25+</h3>
-                <p>Países visitados</p>
-            </div>
-            <div class="stat">
-                <h3>Millones</h3>
-                <p>De vidas tocadas</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- EVENTO -->
-    <section id="evento" class="section">
-        <div class="container">
-            <div class="text">
-                <h2>Experiencia de Fe 2025</h2>
-                <p>Un encuentro de oración, sanación y alabanza que transformará tu vida.  
-                📍 <strong>Ciudad de Guatemala</strong>  
-                📅 <strong>27 y 28 de Septiembre, 2025</strong></p>
-                <br>
-                <a href="#" class="btn-primary">Reserva tu lugar</a>
-                <br>
-                <br>
-                <br>
+        <!-- MISIÓN / ESTADÍSTICAS -->
+        <section id="mision" class="section dark">
+            <div class="container stats">
+                <div class="stat" role="region" aria-label="Años de ministerio">
+                    <h3>+30</h3>
+                    <p>Años de ministerio</p>
+                </div>
+                <div class="stat" role="region" aria-label="Países visitados">
+                    <h3>25+</h3>
+                    <p>Países visitados</p>
+                </div>
+                <div class="stat" role="region" aria-label="Vidas tocadas">
+                    <h3>Millones</h3>
+                    <p>De vidas tocadas</p>
+                </div>
             </div>
-            <div class="image">
-                <img src="img/event.jpg" alt="Evento Neil Vélez Guatemala">
+        </section>
+
+        <!-- TESTIMONIO -->
+        <section id="testimonio" class="testimonio-section fade-in" tabindex="-1" aria-labelledby="testimonio-title">
+            <div class="testimonio-container">
+                <div class="testimonio-img">
+                    <img src="./img/neil-testimonio.jpg" alt="Neil Vélez dando testimonio" loading="lazy" />
+                </div>
+                <div class="testimonio-content">
+                    <h2 id="testimonio-title" style="color:#ffd700;">Testimonio de Vida</h2>
+                    <p class="intro">
+                        A los 28 años, los médicos le dijeron a Neil Vélez que no tenía mucho tiempo de vida.
+                        Sumido en la desesperación, discutía con Dios y sentía que Él le había fallado.
+                        Sin embargo, en medio de su dolor, tuvo un encuentro personal con Jesús que cambió
+                        para siempre el rumbo de su existencia.
+                    </p>
+                    <blockquote>
+                        “No vengo a ofrecerte una religión, sino a presentarte al único que puede
+                        sanar tu alma y tu cuerpo: Jesús.”
+                    </blockquote>
+                    <p class="descripcion">
+                        A partir de ese momento, Neil decidió entregar su vida por completo al servicio de Dios.
+                        Fundó el ministerio <strong>Misioneros de Jesús</strong> y comenzó a recorrer el mundo
+                        predicando, orando por los enfermos y compartiendo el mensaje de que para Dios no hay imposibles.
+                        Hoy, décadas después de aquel diagnóstico, Neil sigue de pie, proclamando que
+                        la fe y la confianza en el Señor pueden transformar cualquier destino.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- GALERÍA -->
-    <section class="section dark">
-        <h2>Galería</h2>
-        <div class="gallery">
-            <img src="img/galeria1.jpg" alt="">
-            <img src="img/galeria2.jpg" alt="">
-            <img src="img/galeria3.jpg" alt="">
-            <img src="img/galeria4.jpg" alt="">
-        </div>
-    </section>
+        <!-- EVENTO -->
+        <section id="evento" class="section" tabindex="-1">
+            <div class="container">
+                <div class="text">
+                    <h2>Experiencia de Fe 2025</h2>
+                    <p>
+                        Un encuentro de oración, sanación y alabanza que transformará tu vida.<br />
+                        📍 <strong>Ciudad de Guatemala</strong><br />
+                        📅 <strong>27 y 28 de Septiembre, 2025</strong>
+                    </p>
+                    <a href="#" class="btn-primary" aria-label="Reserva tu lugar para Experiencia de Fe 2025">Reserva tu lugar</a>
+                </div>
+                <div class="image">
+                    <img src="img/event.jpg" alt="Evento Neil Vélez Guatemala" loading="lazy" />
+                </div>
+            </div>
+        </section>
 
-    <!-- FRASES -->
-    <section class="section quotes">
-        <h2>Frases Inspiradoras</h2>
-        <div class="quote-slider">
-            <p>"Jesús es el mismo ayer, hoy y siempre"</p>
-            <p>"La fe mueve montañas, pero primero mueve tu corazón"</p>
-            <p>"No hay imposible para Dios"</p>
-        </div>
-    </section>
+        <!-- GALERÍA -->
+        <section id="galeria" class="section dark" tabindex="-1" aria-label="Galería de imágenes de Neil Vélez y eventos">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="img/galeria1.jpg" alt="Neil Vélez en conferencia" loading="lazy" />
+                <img src="img/galeria2.jpg" alt="Multitud en evento de Neil Vélez" loading="lazy" />
+                <img src="img/galeria3.jpg" alt="Neil Vélez orando por personas" loading="lazy" />
+                <img src="img/galeria4.jpg" alt="Alabanza y adoración en evento" loading="lazy" />
+            </div>
+        </section>
+
+        <!-- FRASES -->
+        <section id="frases" class="section quotes" tabindex="-1" aria-label="Frases inspiradoras">
+            <h2>Frases Inspiradoras</h2>
+            <div class="quote-slider" aria-live="polite">
+                <p>"Jesús es el mismo ayer, hoy y siempre"</p>
+                <p>"La fe mueve montañas, pero primero mueve tu corazón"</p>
+                <p>"No hay imposible para Dios"</p>
+            </div>
+        </section>
+
+        <!-- VIDEOS -->
+        <section id="videos" class="section videos fade-in" tabindex="-1" aria-label="Videos destacados">
+            <h2>Videos Destacados</h2>
+            <div class="video-grid">
+                <article class="video-card">
+                    <iframe
+                        loading="lazy"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/PFG43KWCQMM?si=kIvOqteZW4Q7P61X"
+                        title="Un poderoso mensaje de fe y esperanza"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Un poderoso mensaje de fe y esperanza.</p>
+                </article>
+                <article class="video-card">
+                    <iframe
+                        loading="lazy"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/byIMa9tQfPo?si=tRk-yYi-8XhljvgR"
+                        title="Sanación y testimonio de vida"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Sanación y testimonio de vida.</p>
+                </article>
+                <article class="video-card">
+                    <iframe
+                        loading="lazy"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/p4g8P1hWSFY?si=mVRzjmNyvgmoI1tO"
+                        title="Encuentro de oración y alabanza"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Encuentro de oración y alabanza.</p>
+                </article>
+                <article class="video-card">
+                    <iframe
+                        loading="lazy"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/WBtrEPgvOek?si=U0CRQ8vrmvZz9Fpx"
+                        title="Dios mira tu corazón. Crée en tu oración"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Dios mira tu corazón. Crée en tu oración.</p>
+                </article>
+                <article class="video-card">
+                    <iframe
+                        loading="lazy"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/nrZcEHTX8Aw?si=DrRQPbg4Uwrdx8rp"
+                        title="Tú no estás solo en este caminar"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                    <p>Tú no estás solo en este caminar.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!-- CONTACTO -->
-    <footer class="footer">
-        <p>MDJ Guatemala © 2025 | <a href="https://www.facebook.com/MisionerosdeJesusGuatemala" target="_blank">Facebook</a> </p>
+    <footer class="footer" role="contentinfo">
+        <p>
+            MDJ Guatemala © 2025 | 
+            <a href="https://www.facebook.com/MisionerosdeJesusGuatemala" target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+        </p>
     </footer>
 
     <script src="./script.js"></script>

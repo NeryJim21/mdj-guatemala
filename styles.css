@@ -1,31 +1,39 @@
+/* ===========================
+   VARIABLES
+   =========================== */
 :root {
     --azul: #0B1E3C;
     --corinto: #7B1E3C;
     --blanco: #ffffff;
+    --dorado: #ffd700;
+    --transparente-negro: rgba(0, 0, 0, 0.4);
 }
 
-/* RESET & TIPOGRAFÍA */
+/* ===========================
+   RESET & TIPOGRAFÍA
+   =========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--blanco);
     color: var(--azul);
     line-height: 1.6;
 }
 
-/* PARALLAX HERO */
+/* ===========================
+   EFECTOS COMUNES
+   =========================== */
 .parallax {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-/* FADE-IN */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -36,7 +44,6 @@ body {
     transform: translateY(0);
 }
 
-/* ZOOM ON SCROLL */
 .zoom-on-scroll {
     transform: scale(0.9);
     transition: transform 1s ease-out;
@@ -45,7 +52,9 @@ body {
     transform: scale(1);
 }
 
-/* HERO */
+/* ===========================
+   HERO
+   =========================== */
 .hero {
     height: 100vh;
     background: url('img/hero-bg.jpg') no-repeat center/cover;
@@ -60,14 +69,12 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: var(--transparente-negro);
 }
 .hero-content {
     position: relative;
     z-index: 1;
 }
-
-/* TITULOS Y TEXTOS */
 h1, h2 {
     letter-spacing: -1px;
 }
@@ -81,7 +88,9 @@ h1, h2 {
     margin-bottom: 2rem;
 }
 
-/* BOTONES */
+/* ===========================
+   BOTONES
+   =========================== */
 .btn-primary {
     background: var(--corinto);
     color: var(--blanco);
@@ -99,7 +108,9 @@ h1, h2 {
     box-shadow: 0 6px 25px rgba(123, 30, 60, 0.6);
 }
 
-/* SECCIONES */
+/* ===========================
+   SECCIONES
+   =========================== */
 .section {
     padding: 4rem 2rem;
 }
@@ -116,10 +127,7 @@ h1, h2 {
     flex-wrap: wrap;
     gap: 2rem;
 }
-.container .text {
-    flex: 1;
-    min-width: 300px;
-}
+.container .text,
 .container .image {
     flex: 1;
     min-width: 300px;
@@ -127,15 +135,17 @@ h1, h2 {
 .container .image img {
     max-width: 100%;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 .container .image img:hover {
     transform: scale(1.03);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* ESTADÍSTICAS */
+/* ===========================
+   ESTADÍSTICAS
+   =========================== */
 .stats {
     display: flex;
     justify-content: space-around;
@@ -150,7 +160,63 @@ h1, h2 {
     font-size: 1rem;
 }
 
-/* GALERÍA */
+/* ===========================
+   TESTIMONIO
+   =========================== */
+.testimonio-section {
+    background: linear-gradient(135deg, #001f3f, #4b0e0e);
+    padding: 4rem 1rem;
+    color: var(--blanco);
+}
+.testimonio-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+.testimonio-img {
+    flex: 1 1 400px;
+}
+.testimonio-img img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+}
+.testimonio-img img:hover {
+    transform: scale(1.05);
+}
+.testimonio-content {
+    flex: 1 1 500px;
+}
+.testimonio-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--dorado);
+}
+.testimonio-content .intro {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.testimonio-content blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--blanco);
+    border-left: 4px solid var(--dorado);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+.testimonio-content .descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ===========================
+   GALERÍA
+   =========================== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -160,14 +226,16 @@ h1, h2 {
 .gallery img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.4s ease;
 }
 .gallery img:hover {
     transform: scale(1.05);
 }
 
-/* FRASES */
+/* ===========================
+   FRASES
+   =========================== */
 .quotes {
     text-align: center;
     padding: 4rem 2rem;
@@ -183,7 +251,47 @@ h1, h2 {
     display: block;
 }
 
-/* FOOTER */
+/* ===========================
+   VIDEOS
+   =========================== */
+.videos {
+    text-align: center;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.video-card {
+    background: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border: none;
+}
+.video-card p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--azul);
+}
+.section.videos h2 {
+    margin-bottom: 1rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
 .footer {
     background: var(--azul);
     color: var(--blanco);
@@ -198,12 +306,16 @@ h1, h2 {
     text-decoration: underline;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 992px) {
     .container {
         flex-direction: column;
         text-align: center;
     }
+}
+@media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -212,5 +324,12 @@ h1, h2 {
     }
     .stats {
         flex-direction: column;
+    }
+    .testimonio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonio-content blockquote {
+        text-align: left;
     }
 }
