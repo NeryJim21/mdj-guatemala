@@ -108,6 +108,11 @@ h1, h2 {
     box-shadow: 0 6px 25px rgba(123, 30, 60, 0.6);
 }
 
+.btn-reserva {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
 /* ===========================
    SECCIONES
    =========================== */
