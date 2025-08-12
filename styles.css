@@ -331,10 +331,97 @@ h1, h2 {
         flex-direction: column;
     }
     .testimonio-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
     .testimonio-content blockquote {
         text-align: left;
+    }
+}
+
+/* ===========================
+   OPTIMIZACIÓN PARA MÓVIL
+   =========================== */
+@media (max-width: 768px) {
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* BOTONES más visibles en móvil */
+    .btn-primary {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 1rem;
+        border-radius: 35px;
+    }
+
+    /* TESTIMONIO: texto primero, imagen después */
+    .testimonio-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .testimonio-img img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .testimonio-content h2 {
+        font-size: 1.8rem;
+    }
+    .testimonio-content blockquote {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        padding-left: 0.8rem;
+    }
+
+    /* GALERÍA: más grandes en móvil */
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    /* VIDEOS: una sola columna */
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .video-card iframe {
+        height: 220px;
+    }
+
+    /* ESPACIADO general */
+    .section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* ===========================
+   OPTIMIZACIÓN EXTRA PARA MÓVIL PEQUEÑO (<480px)
+   =========================== */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+    .testimonio-content h2 {
+        font-size: 1.6rem;
+    }
+    .testimonio-content blockquote {
+        font-size: 1rem;
     }
 }
